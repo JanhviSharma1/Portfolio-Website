@@ -1,0 +1,364 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.normal{
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*nav bar*/
+ .navbar {
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     z-index: 1000;
+ }
+
+ .navbar-brand {
+     font-weight: bold;
+     font-size: 1.5rem;
+ }
+
+ .nav-link {
+     font-size: 1.2rem;
+     color: #5B5750;
+ }
+
+ .img-nav {
+    height: 45px;
+ }
+
+ .navbar-a {
+    margin: 5px;
+ }
+ 
+ a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    margin: 7px;
+ }
+
+ a :hover{
+    color:rgb(250, 235, 235);
+ }
+
+ /*hero section----------------------------------------*/
+ .hero-section {
+     background: RGB(249, 246, 239);
+     color: #492C1D;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 100px 20px;
+     height: 90vh;
+ }
+
+ .hero-section h1 {
+     border-right: 2px solid #6B7F82;
+     white-space: nowrap;
+     overflow: hidden;
+     font-size: 3rem;
+     animation: typing 4s steps(20, end), blink-caret 0.5s step-end infinite;
+     width: 
+ }
+  
+ .mt-3{
+     font-size: 20px;
+ }
+
+ .typing-font {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+ }
+
+ .resume-section {
+     position: absolute;
+     bottom: 30%;
+     display: flex;
+     justify-content: center;
+     width: 100%;
+ }
+
+ .download-btn {
+     padding: 15px 30px;
+     font-size: 16px;
+     color: BLACK;
+     text-decoration: none;
+     background-color: RGB(249, 246, 239);
+     border: none;
+     border-radius: 25px;
+     transition: background-color 0.3s ease, transform 0.3s ease;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+ }
+
+ .download-btn:hover {
+     background-color: #b5c991;
+     transform: translateY(-5px);
+     cursor: pointer;
+ }
+
+ .download-btn:active {
+     transform: translateY(0);
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+ }
+
+ .profile-picture {
+     max-width: 350px;
+     border-radius: 50%;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     margin-left: 45px;;
+ }
+
+ .font-size{
+    font-size: 20px;
+ }
+.display{
+    padding: 40px;
+}
+
+.inner{
+    margin-left: 45px;
+}
+
+ /* Typing animation */
+ @keyframes typing {
+     from {
+         width: 0;
+     }
+
+     to {
+         width: 20ch;
+     }
+ }
+
+ @keyframes blink-caret {
+
+     from,
+     to {
+         border-color: transparent;
+     }
+
+     50% {
+         border-color: #6B7F82;
+     }
+ }
+
+  /* Project Cards------------------------------------- */
+  .project-card img {
+      max-height: 190px;
+      object-fit: cover;
+  }
+
+  .project-card:hover{
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .project-btn {
+    background: rgb(93, 73, 73);
+    color: white;
+  }
+
+  .project-btn:hover{
+    background-color: rgb(55, 39, 39);
+    color: white;
+  }
+
+  /* Education-------------------------------------- */
+ .background{
+    background: RGB(249, 246, 239);
+    color: rgb(84, 40, 40);
+ }
+ .bold{
+    font-weight: bold;
+ }
+  .circle {
+      font-weight: bold;
+      padding: 15px 10px;
+      border-radius: 50%;
+      background-color: #9d9b72;
+      color: #4D4545; 
+      z-index: 2;
+      position: relative;
+      width: 70px;
+  }
+
+  /* Skills Bubbles */
+  .content {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+  }
+
+  .skills-section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      /* Initially hidden */
+      transition: opacity 1s ease-in-out;
+  }
+
+  .skills-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .bubbles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0px;
+  }
+
+  .bubble,
+  .bubble-big {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 1rem;
+      color: black;
+      background-color: RGB(249, 246, 239);
+      padding: 20px;
+      cursor: pointer;
+      position: relative;
+      opacity: 0;
+      animation: moveIn 1.5s ease-out forwards;
+  }
+
+  .bubble-big {
+      width: 150px;
+      height: 150px;
+      font-size: 1.2rem;
+  }
+
+  .bubble {
+      width: 100px;
+      height: 100px;
+  }
+
+  .bubble:hover,
+  .bubble-big:hover {
+      transform: scale(1.1);
+  }
+
+  @keyframes moveIn {
+      0% {
+          transform: translateX(-100vw) translateY(-100vh) scale(0);
+          opacity: 0;
+      }
+
+      100% {
+          transform: translateX(0) translateY(0) scale(1);
+          opacity: 1;
+      }
+  }
+
+  .bubble:nth-child(odd) {
+      animation-name: moveInTL;
+  }
+
+  .bubble:nth-child(even) {
+      animation-name: moveInBR;
+  }
+
+  .bubble:nth-child(3n) {
+      animation-name: moveInTR;
+  }
+
+  .bubble:nth-child(4n) {
+      animation-name: moveInBL;
+  }
+
+  @keyframes moveInTL {
+      from {
+          transform: translate(-50vw, -50vh) scale(0);
+          opacity: 0;
+      }
+
+      to {
+          transform: translate(0, 0) scale(1);
+          opacity: 1;
+      }
+  }
+
+  @keyframes moveInBR {
+      from {
+          transform: translate(50vw, 50vh) scale(0);
+          opacity: 0;
+      }
+
+      to {
+          transform: translate(0, 0) scale(1);
+          opacity: 1;
+      }
+  }
+
+  @keyframes moveInTR {
+      from {
+          transform: translate(50vw, -50vh) scale(0);
+          opacity: 0;
+      }
+
+      to {
+          transform: translate(0, 0) scale(1);
+          opacity: 1;
+      }
+  }
+
+  @keyframes moveInBL {
+      from {
+          transform: translate(-50vw, 50vh) scale(0);
+          opacity: 0;
+      }
+
+      to {
+          transform: translate(0, 0) scale(1);
+          opacity: 1;
+      }
+  }
+
+ /* Contact Section */
+ .contact-section {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 50px;
+     background-color: #faf3ed;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(118, 100, 100, 0.1);
+ }
+
+ .form-control,
+ .btn {
+     border-radius: 5px;
+ } 
+
+ h2 {
+     font-weight: bold;
+     margin-bottom: 20px;
+ }
+
+ .contact-image{
+    height: 600px;
+    width: 500px;
+ }
+
